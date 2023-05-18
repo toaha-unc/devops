@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yU3rxp1j5/gfLodQFT868T/YhFT0zZFpepqQ8F6bU6739I5zUX0r3Fwsf/Ow03p5LY4vrieOyaw++HEpebyS4Q==",
+  "success": true,
+  "projectFilePath": "C:\\code\\devops\\working_with_jenkins\\dotnet_code\\ArlingtonThisWeek\\ArlingtonThisWeek.Web\\ArlingtonThisWeek.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
