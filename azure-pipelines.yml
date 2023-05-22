@@ -13,4 +13,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln'
+    projects: $(solutionPath)
