@@ -1,0 +1,8 @@
+node{
+	stage('Build'){
+		dotnetBuild project: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
+	}
+	stage('Test'){
+		echo 'Run unit tests'
+	}
+}
