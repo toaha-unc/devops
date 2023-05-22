@@ -3,7 +3,7 @@ node{
 		checkout scm
 	}
 	stage('Build'){
-		dotnetBuild project: env.WORKSPACE + 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
+		dotnetBuild project: env.WORKSPACE + '/working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
 	}
 	stage('Test'){
 		echo 'Run unit tests'
