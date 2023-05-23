@@ -7,9 +7,10 @@ node{
 	}
 	stage('Build'){
 		try{
-		dotnetBuild project: env.WORKSPACE + '/working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
-		}catch{
-			archiveArtifacts artifacts: '**/*.*', followSymlinks: false		
+			dotnetBuild project: env.WORKSPACE + '/working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
+		} catch(Exception e){
+			echo e.toString()
+			archiveArtifacts artifacts: '**/*.*', followSymlinks: false
 			cleanWs()
 		}
 	}
