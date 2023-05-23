@@ -1,4 +1,7 @@
 node{
+	stage('Cleanup'){
+		cleanWs()
+	}
 	stage('Git'){
 		checkout scm
 	}
