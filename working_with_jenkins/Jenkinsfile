@@ -6,10 +6,18 @@ node{
 		checkout scm
 	}
 	stage('Build'){
+		try{
 		dotnetBuild project: env.WORKSPACE + '/working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
+		}catch{
+			archiveArtifacts artifacts: '**/*.*', followSymlinks: false		
+			cleanWs()
+		}
 	}
 	stage('Test'){
 		echo 'Run unit tests'
+	}
+	stage('Artifact'){
+		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
 	}
 	stage('Cleanup'){
 		cleanWs()
