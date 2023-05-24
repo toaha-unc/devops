@@ -10,7 +10,7 @@ node{
 	}
 	stage('Build'){
 		withCredentials([string(credentialsId: 'OurSecret', variable: 'secretValue')]) {
-			echo "Use the password in a command: " + ${secretValue}
+			echo "Use the password in a command: " + "${secretValue}"
 		}
 		
 		try{
