@@ -1,7 +1,5 @@
 node{
-	stage('Params'){
-		properties([[$class: 'ScannerJobProperty', doNotScan: false], parameters([password(defaultValueAsSecret: <object of type hudson.util.Secret>, name: 'Password')]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
-	}
+	properties([[$class: 'ScannerJobProperty', doNotScan: false], parameters([password(defaultValueAsSecret: <object of type hudson.util.Secret>, name: 'Password')]), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 	stage('Cleanup'){
 		cleanWs()
 	}
