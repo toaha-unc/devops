@@ -30,5 +30,4 @@ namespace ArlingtonThisWeek.Web
 
             app.Run();
         }
-    }
 }
