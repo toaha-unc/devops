@@ -1,4 +1,17 @@
 node{
+	stage('params'){
+		steps{
+			script{
+				properties([
+					parameters([
+						password(
+							name: 'Password'
+						)
+					])
+				])
+			}
+		}
+	}
 	stage('Cleanup'){
 		cleanWs()
 	}
@@ -6,6 +19,7 @@ node{
 		checkout scm
 	}
 	stage('Build'){
+		echo "Use the password in a command: " + env.Password
 		try{
 			dotnetBuild project: env.WORKSPACE + '/working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', sdk: 'dotnet6'
 		} catch(Exception e){
