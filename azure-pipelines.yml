@@ -15,6 +15,12 @@ steps:
   inputs:
     command: 'build'
     projects: $(solutionPath)
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      
+      echo "Our secret value" $(OURSECRET)
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
