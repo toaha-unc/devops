@@ -9,8 +9,8 @@ node{
 		checkout scm
 	}
 	stage('Build'){
-		withCredentials([string(credentialsId: 'OurSecret', variable: 'secretValue')]) {
-			echo "Use the password in a command: " + "${secretValue}"
+		withCredentials([string(credentialsId: 'OurSecret', variable: 'OurSecret')]) {
+			echo "Use the password in a command: " + "${OurSecret}"
 		}
 		
 		try{
