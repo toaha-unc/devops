@@ -22,4 +22,4 @@ steps:
     publishLocation: 'Container'
 - task: CmdLine@2
   inputs:
-    script: 'echo "Our secret value: " $(OURSECRET)'
+    script: 'echo "Our secret value:  $(OURSECRET)"'
