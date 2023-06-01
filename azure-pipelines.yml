@@ -24,6 +24,7 @@ steps:
     projects: $(solutionPath)
 
 - task: DotNetCoreCLI@2
+  displayName: "Publish the results for the test.dll"
   inputs:
     command: 'publish'
     publishWebProjects: false
@@ -32,12 +33,14 @@ steps:
     zipAfterPublish: false
     modifyOutputPath: false
 - task: DotNetCoreCLI@2
+  displayName: "Run the tests and publish the coverage"
   inputs:
     command: 'test'
     projects: '$(System.DefaultWorkingDirectory)/output/**/*.Tests.dll'
     arguments: '--collect "XPlat Code Coverage" --results-directory $(System.DefaultWorkingDirectory)/output/testresults'
     publishTestResults: false
 - task: PublishCodeCoverageResults@1
+  displayName: "Publish the coverage results"
   inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/output/testresults/**/coverage.cobertura.xml'
@@ -48,6 +51,3 @@ steps:
     PathtoPublish: '$(Build.SourcesDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- task: CmdLine@2
-  inputs:
-    script: 'echo "Our secret value:  $(OURSECRET)"'
