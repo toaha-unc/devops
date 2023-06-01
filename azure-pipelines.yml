@@ -41,12 +41,12 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
-    Contents: '**/cobertura.coverage.xml'
+    Contents: '**/coverage.cobertura.xml'
     TargetFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
 - task: PublishCodeCoverageResults@2
   displayName: "Publish Code Results"
   inputs:
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/output/testresults/cobertura.coverage.xml'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)\output\testresults\.coverage.cobertura.xml'
     failIfCoverageEmpty: true
 - task: PublishBuildArtifacts@1
   inputs:
