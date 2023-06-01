@@ -22,16 +22,16 @@ steps:
   inputs:
     command: 'build'
     projects: $(solutionPath)
-- task: PublishBuildArtifacts@1
+
+- task: DotNetCoreCLI@2
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)'
-    ArtifactName: 'TestPath'
-    publishLocation: 'FilePath'
-    TargetPath: $(System.DefaultWorkingDirectory)/output
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '-o output'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: '$(System.DefaultWorkingDirectory)/output/*.Tests.dll'
+    projects: '$(System.DefaultWorkingDirectory)/*.Tests.dll'
     arguments: '--collect "XPlat Code Coverage" --test-results $(System.DefaultWorkingDirectory)/output/testresults'
 - task: PublishCodeCoverageResults@2
   inputs:
