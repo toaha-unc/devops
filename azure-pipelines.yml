@@ -36,7 +36,7 @@ steps:
   inputs:
     command: 'test'
     projects: '$(System.DefaultWorkingDirectory)/output/**/*.Tests.dll'
-    arguments: '--collect "XPlat Code Coverage" --test-results $(System.DefaultWorkingDirectory)/output/testresults'
+    arguments: '--collect "XPlat Code Coverage" --test-results $(System.DefaultWorkingDirectory)\output\testresults'
 - task: PublishCodeCoverageResults@2
   displayName: "Publish Code Results"
   inputs:
