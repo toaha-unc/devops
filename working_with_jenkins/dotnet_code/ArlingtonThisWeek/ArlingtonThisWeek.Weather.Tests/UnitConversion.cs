@@ -17,5 +17,20 @@ namespace ArlingtonThisWeek.Weather.Tests
             // Assert
             Assert.AreEqual(expectedFahrenheit, fahrenheitTemp);
         }
+
+        [TestMethod]
+        public void ConvertFahrenheitToCelsius()
+        {
+            // triple-A
+            // Arrange
+            decimal fahrenheitTemp = 68m;
+
+            // Act
+            var celsiusTemp = WeatherHelper.FahrenheitToCelsius(fahrenheitTemp);
+            var expectedCelsius = 20m;
+
+            // Assert
+            Assert.AreEqual(expectedCelsius, celsiusTemp);
+        }
     }
 }

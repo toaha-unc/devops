@@ -9,7 +9,7 @@
 
         public static decimal FahrenheitToCelsius(decimal fahrenheitTemp)
         {
-            return (fahrenheitTemp - 32) * 5 / 8;
+            return (fahrenheitTemp - 32) * 5 / 9;
         }
     }
 }
