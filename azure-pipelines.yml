@@ -40,7 +40,7 @@ steps:
     publishTestResults: false
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/output/testresults/**'
+    SourceFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
     Contents: 'coverage.cobertura.xml'
     TargetFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
 - task: PublishCodeCoverageResults@2
