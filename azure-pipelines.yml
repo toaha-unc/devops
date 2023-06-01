@@ -42,7 +42,7 @@ steps:
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)/output/testresults/**'
     Contents: 'coverage.cobertura.xml'
-    TargetFolder: '$(System.DefaultWorkingDirectory)/output/testresults/coverage.cobertura.xml'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
 - task: PublishCodeCoverageResults@2
   displayName: "Publish Code Results"
   inputs:
