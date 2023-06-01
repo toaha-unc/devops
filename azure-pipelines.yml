@@ -24,15 +24,18 @@ steps:
     projects: $(solutionPath)
 
 - task: DotNetCoreCLI@2
+  displayName: "Publish the output to a test location"
   inputs:
     command: 'publish'
     arguments: '-o $(System.DefaultWorkingDirectory)/output'
 - task: DotNetCoreCLI@2
+  displayName: "Execute tests and generate coverage"
   inputs:
     command: 'test'
     projects: '$(System.DefaultWorkingDirectory)/*.Tests.dll'
     arguments: '--collect "XPlat Code Coverage" --test-results $(System.DefaultWorkingDirectory)/output/testresults'
 - task: PublishCodeCoverageResults@2
+  displayName: "Publish Code Results"
   inputs:
     summaryFileLocation: 'cobertura.coverage.xml'
     pathToSources: '$(System.DefaultWorkingDirectory)/output/testresults/**'
