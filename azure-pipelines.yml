@@ -8,7 +8,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
+  demands: 
+    - MyCrazyBuildCapability -equals 1
 
 steps:
 - task: DotNetCoreCLI@2
