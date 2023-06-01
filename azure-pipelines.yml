@@ -27,10 +27,11 @@ steps:
     command: 'test'
     projects: '**/bin/**/net6.0/*.Tests.dll'
     arguments: '--collect "Code coverage"'
-- task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@2
   inputs:
-    codeCoverageTool: Cobertura
     summaryFileLocation: 'coverage.xml'
+    pathToSources: '$(System.DefaultWorkingDirectory)/working_with_jenkins/dotnet_code/ArlingtonThisWeek'
+    failIfCoverageEmpty: true
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
