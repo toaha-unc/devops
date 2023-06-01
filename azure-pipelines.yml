@@ -27,6 +27,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
+    projects: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln'
     arguments: '-o $(System.DefaultWorkingDirectory)/output'
     zipAfterPublish: false
     modifyOutputPath: false
