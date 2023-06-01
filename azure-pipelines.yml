@@ -5,7 +5,12 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+ branches:
+  include:
+    - main
+ paths:
+   exclude: 
+   - "**/Jenkinsfile"
 
 pool:
   name: Default
@@ -17,6 +22,15 @@ steps:
   inputs:
     command: 'build'
     projects: $(solutionPath)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    projects: '**/bin/**/net6.0/*.Tests.dll'
+    arguments: '--collect "Code coverage"'
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: 'coverage.xml'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
