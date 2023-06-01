@@ -36,7 +36,7 @@ steps:
 - task: PublishCodeCoverageResults@2
   inputs:
     summaryFileLocation: 'cobertura.coverage.xml'
-    pathToSources: '$(System.DefaultWorkingDirectory)/output/testresults'
+    pathToSources: '$(System.DefaultWorkingDirectory)/output/testresults/**'
     failIfCoverageEmpty: true
 - task: PublishBuildArtifacts@1
   inputs:
