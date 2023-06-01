@@ -44,7 +44,7 @@ steps:
     Contents: '**/coverage.cobertura.xml'
     TargetFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
     flattenFolders: true
-- task: PublishCodeCoverageResults@2
+- task: PublishCodeCoverageResults@1
   displayName: "Publish Code Results"
   inputs:
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/output/testresults/coverage.cobertura.xml'
