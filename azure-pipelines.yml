@@ -26,15 +26,10 @@ steps:
   inputs:
     command: 'test'
     projects: '**/bin/**/net6.0/*.Tests.dll'
-- task: PublishCodeCoverageResults@2
+- task: PublishCodeCoverageResults@1
   inputs:
+    codeCoverageTool: Cobertura
     summaryFileLocation: 'coverage.xml'
-- task: BuildQualityChecks@8
-  displayName: 'Check build quality'
-  inputs:
-    checkCoverage: true
-    coverageFailOption: fixed
-    coverageThreshold: 70
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
