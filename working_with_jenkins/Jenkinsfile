@@ -22,7 +22,9 @@ node('built-in'){
 		}
 	}
 	stage('Test'){
-		dotnetTest project: 'dotnet test **/*.Tests.dll !**/ref !**/obj', sdk: 'dotnet6'
+		dotnetTest project: 'dotnet test 
+		**/*.Tests.dll
+		!**/ref !**/obj', sdk: 'dotnet6'
 	}
 	stage('Artifact'){
 		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
