@@ -27,7 +27,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    arguments: '-o output'
+    arguments: '-o $(System.DefaultWorkingDirectory)/output'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
