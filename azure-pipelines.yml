@@ -24,10 +24,12 @@ steps:
     projects: $(solutionPath)
 
 - task: DotNetCoreCLI@2
-  displayName: "Publish the output to a test location"
   inputs:
     command: 'publish'
+    publishWebProjects: false
     arguments: '-o $(System.DefaultWorkingDirectory)/output'
+    zipAfterPublish: false
+    modifyOutputPath: false
 - task: DotNetCoreCLI@2
   displayName: "Execute tests and generate coverage"
   inputs:
