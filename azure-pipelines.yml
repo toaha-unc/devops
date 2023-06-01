@@ -22,15 +22,21 @@ steps:
   inputs:
     command: 'build'
     projects: $(solutionPath)
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.SourcesDirectory)'
+    ArtifactName: 'TestPath'
+    publishLocation: 'FilePath'
+    TargetPath: $(System.DefaultWorkingDirectory)/output
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    projects: '**/bin/**/net6.0/*.Tests.dll'
-    arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+    projects: '$(System.DefaultWorkingDirectory)/output/*.Tests.dll'
+    arguments: '--collect "XPlat Code Coverage"'
 - task: PublishCodeCoverageResults@2
   inputs:
-    summaryFileLocation: 'coverage.xml'
-    pathToSources: '$(System.DefaultWorkingDirectory)/working_with_jenkins/dotnet_code/ArlingtonThisWeek'
+    summaryFileLocation: 'cobertura.coverage.xml'
+    pathToSources: '$(System.DefaultWorkingDirectory)/output'
     failIfCoverageEmpty: true
 - task: PublishBuildArtifacts@1
   inputs:
