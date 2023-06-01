@@ -22,7 +22,7 @@ node('built-in'){
 		}
 	}
 	stage('Test'){
-		dotnetTest project: '**/*.Tests.dll', sdk: 'dotnet6'
+		dotnetTest project: '/var/jenkins_home/workspace/ArlingtonThisWeek-pipeline/working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.Weather.Tests/bin/Debug/net6.0/ArlingtonThisWeek.Weather.Tests.dll', sdk: 'dotnet6'
 	}
 	stage('Artifact'){
 		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
