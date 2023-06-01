@@ -38,10 +38,15 @@ steps:
     projects: '$(System.DefaultWorkingDirectory)/output/**/*.Tests.dll'
     arguments: '--collect "XPlat Code Coverage" --results-directory $(System.DefaultWorkingDirectory)/output/testresults'
     publishTestResults: false
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
+    Contents: '**/cobertura.coverage.xml'
+    TargetFolder: '$(System.DefaultWorkingDirectory)/output/testresults'
 - task: PublishCodeCoverageResults@2
   displayName: "Publish Code Results"
   inputs:
-    summaryFileLocation: '**/cobertura.coverage.xml'
+    summaryFileLocation: 'cobertura.coverage.xml'
     pathToSources: '$(System.DefaultWorkingDirectory)/output/testresults'
     failIfCoverageEmpty: true
 - task: PublishBuildArtifacts@1
