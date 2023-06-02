@@ -22,20 +22,37 @@ steps:
   inputs:
     command: 'build'
     projects: $(solutionPath)
+
 - task: DotNetCoreCLI@2
+  displayName: "Publish the results for the test.dll"
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln'
+    arguments: '-o $(System.DefaultWorkingDirectory)/output'
+    zipAfterPublish: false
+    modifyOutputPath: false
+- task: DotNetCoreCLI@2
+  displayName: "Run the tests and publish the coverage"
   inputs:
     command: 'test'
-    projects: '**/bin/**/net6.0/*.Tests.dll'
-    arguments: '--collect "Code coverage"'
+    projects: '$(System.DefaultWorkingDirectory)/output/**/*.Tests.dll'
+    arguments: '--collect "XPlat Code Coverage" --results-directory $(System.DefaultWorkingDirectory)/output/testresults'
+    publishTestResults: false
 - task: PublishCodeCoverageResults@1
+  displayName: "Publish the coverage results"
   inputs:
     codeCoverageTool: Cobertura
-    summaryFileLocation: 'coverage.xml'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/output/testresults/**/coverage.cobertura.xml'
+    failIfCoverageEmpty: true
+- task: BuildQualityChecks@8
+  inputs:
+    checkCoverage: true
+    coverageFailOption: 'fixed'
+    coverageType: 'lines'
+    coverageThreshold: '11'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- task: CmdLine@2
-  inputs:
-    script: 'echo "Our secret value:  $(OURSECRET)"'
