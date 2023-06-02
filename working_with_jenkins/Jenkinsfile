@@ -21,12 +21,14 @@ node('built-in'){
 			cleanWs()
 		}
 	}
-	stage('Test'){
-		dotnetTest project: '**/bin/**/net6.0/*.Tests.dll', sdk: 'dotnet6'
+	parallel{
+		"Test":{
+			dotnetTest project: '**/bin/**/net6.0/*.Tests.dll', sdk: 'dotnet6'
+		},
+		"Analysis": {
+			snykSecurity snykInstallation: 'MySnyk', snykTokenId: 'Snyk', targetFile: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln'
+		}
 	}
-	stage('Analysis') {
-        snykSecurity projectName: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', snykInstallation: MySnyk
-    }
 	stage('Artifact'){
 		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
 	}
