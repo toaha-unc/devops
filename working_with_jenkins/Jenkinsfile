@@ -25,10 +25,7 @@ node('built-in'){
 		dotnetTest project: '**/bin/**/net6.0/*.Tests.dll', sdk: 'dotnet6'
 	}
 	stage('Analysis') {
-        snykSecurity(
-          snykInstallation: 'MySnyk',
-          snykTokenId: 'Snyk'
-        )
+        snykSecurity projectName: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln', snykInstallation: MySnyk
     }
 	stage('Artifact'){
 		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
