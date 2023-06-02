@@ -29,7 +29,6 @@ node('built-in'){
           snykInstallation: 'MySynk',
           snykTokenId: 'd87252d4-ef7e-4360-b482-2d185ccb6521'
         )
-      }
     }
 	stage('Artifact'){
 		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
