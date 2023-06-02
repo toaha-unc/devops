@@ -27,7 +27,7 @@ node('built-in'){
 	stage('Analysis') {
         snykSecurity(
           snykInstallation: 'MySnyk',
-          snykTokenId: 'd87252d4-ef7e-4360-b482-2d185ccb6521'
+          snykTokenId: 'Snyk'
         )
     }
 	stage('Artifact'){
