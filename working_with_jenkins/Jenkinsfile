@@ -19,15 +19,14 @@ node('built-in'){
 			echo e.toString()
 			archiveArtifacts artifacts: '**/*.*', followSymlinks: false
 			cleanWs()
+			throw
 		}
 	}
-	parallel{
-		stage("Test"){
-			dotnetTest project: '**/bin/**/net6.0/*.Tests.dll', sdk: 'dotnet6'
-		}
-		stage("Analysis"){
-			snykSecurity snykInstallation: 'MySnyk', snykTokenId: 'Snyk', targetFile: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln'
-		}
+	stage("Test"){
+		dotnetTest project: '**/bin/**/net6.0/*.Tests.dll', sdk: 'dotnet6'
+	}
+	stage("Analysis"){
+		snykSecurity snykInstallation: 'MySnyk', snykTokenId: 'Snyk', targetFile: 'working_with_jenkins/dotnet_code/ArlingtonThisWeek/ArlingtonThisWeek.sln'
 	}
 	stage('Artifact'){
 		archiveArtifacts artifacts: '**/*.*', followSymlinks: false
