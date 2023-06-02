@@ -19,7 +19,7 @@ node('built-in'){
 			echo e.toString()
 			archiveArtifacts artifacts: '**/*.*', followSymlinks: false
 			cleanWs()
-			throw
+			throw e
 		}
 	}
 	stage("Test"){
