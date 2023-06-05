@@ -1,0 +1,8 @@
+¤
+&ArlingtonThisWeek.Web.Pages.ErrorModel-Microsoft.AspNetCore.Mvc.RazorPages.PageModelobjectÛ
+XErrorModel(Microsoft.Extensions.Logging.ILogger<ArlingtonThisWeek.Web.Pages.ErrorModel>)ArlingtonThisWeek.Web.Pages.ErrorModel.ErrorModel(Microsoft.Extensions.Logging.ILogger<ArlingtonThisWeek.Web.Pages.ErrorModel>)9
+OnGet().ArlingtonThisWeek.Web.Pages.ErrorModel.OnGet()E
+RequestId.get4ArlingtonThisWeek.Web.Pages.ErrorModel.RequestId.getE
+RequestId.set4ArlingtonThisWeek.Web.Pages.ErrorModel.RequestId.setM
+ShowRequestId.get8ArlingtonThisWeek.Web.Pages.ErrorModel.ShowRequestId.getM
+ShowRequestId.set8ArlingtonThisWeek.Web.Pages.ErrorModel.ShowRequestId.set

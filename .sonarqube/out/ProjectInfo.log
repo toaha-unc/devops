@@ -1,0 +1,26 @@
+Product projects
+---------------------------------------
+C:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Weather\ArlingtonThisWeek.Weather.csproj
+C:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\ArlingtonThisWeek.Web.csproj
+
+
+Test projects
+---------------------------------------
+C:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Weather.Tests\ArlingtonThisWeek.Weather.Tests.csproj
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

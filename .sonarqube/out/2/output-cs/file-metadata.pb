@@ -1,0 +1,16 @@
+v
+mC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Pages\Error.cshtml.csutf-8v
+mC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Pages\Index.cshtml.csutf-8x
+oC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Pages\Privacy.cshtml.csutf-8k
+bC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Program.csutf-8ú
+êC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\obj\Debug\net6.0\ArlingtonThisWeek.Web.GlobalUsings.g.csutf-8£
+óC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ö
+éC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\obj\Debug\net6.0\ArlingtonThisWeek.Web.AssemblyInfo.csutf-8ü
+ìC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\obj\Debug\net6.0\ArlingtonThisWeek.Web.RazorAssemblyInfo.csutf-8â
+~Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Error_cshtml.g.csutf-8â
+~Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Index_cshtml.g.csutf-8å
+ÄMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Privacy_cshtml.g.csutf-8•
+ôMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Shared__ValidationScriptsPartial_cshtml.g.csutf-8ë
+ÖMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages__ViewImports_cshtml.g.csutf-8è
+ÉMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages__ViewStart_cshtml.g.csutf-8ì
+áMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Shared__Layout_cshtml.g.csutf-8

@@ -1,0 +1,7 @@
+organization=devops-enterprise
+projectKey=devops-enterprise_arlingtonthisweek
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.42104
+dashboardUrl=https://sonarcloud.io/dashboard?id=devops-enterprise_arlingtonthisweek
+ceTaskId=AYiMoSiqpyA37Qvzxd7K
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYiMoSiqpyA37Qvzxd7K

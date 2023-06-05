@@ -1,0 +1,110 @@
+
+,ArlingtonThisWeek.Web.Program.Main(string[])l
+bC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Program.cs ("0*Ý
+0 (0Õ
+Ò
+ (<8
+%02Microsoft.AspNetCore.Builder.WebApplicationBuilder"CMicrosoft.AspNetCore.Builder.WebApplication.CreateBuilder(string[])*1/"-
++Microsoft.AspNetCore.Builder.WebApplication*
+
+argsstring[]
+
+ (<=
+builder2Microsoft.AspNetCore.Builder.WebApplicationBuilder"__id*<:
+8
+%02Microsoft.AspNetCore.Builder.WebApplicationBuilderÔ
+Ñ
+	 	(A
+%1;Microsoft.Extensions.DependencyInjection.IServiceCollection"?Microsoft.AspNetCore.Builder.WebApplicationBuilder.Services.get*A?
+=
+builder2Microsoft.AspNetCore.Builder.WebApplicationBuilderô
+ñ
+	 	(,:
+%24Microsoft.Extensions.DependencyInjection.IMvcBuilder"’Microsoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions.AddRazorPages(Microsoft.Extensions.DependencyInjection.IServiceCollection)*MK"I
+GMicrosoft.Extensions.DependencyInjection.MvcServiceCollectionExtensions*EC
+A
+%1;Microsoft.Extensions.DependencyInjection.IServiceCollection¿
+¼
+ (%1
+%3+Microsoft.AspNetCore.Builder.WebApplication":Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()*A?
+=
+builder2Microsoft.AspNetCore.Builder.WebApplicationBuilder}
+{
+ (%2
+app+Microsoft.AspNetCore.Builder.WebApplication"__id*53
+1
+%3+Microsoft.AspNetCore.Builder.WebApplicationº
+·
+ ( 6
+%40Microsoft.AspNetCore.Hosting.IWebHostEnvironment";Microsoft.AspNetCore.Builder.WebApplication.Environment.get*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplicationŽ
+‹
+ (0
+
+%5bool"vMicrosoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment)*?=";
+9Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions*:8
+6
+%40Microsoft.AspNetCore.Hosting.IWebHostEnvironment*
+1
+2*
+1 (Ò
+Ï
+ (16
+%60Microsoft.AspNetCore.Builder.IApplicationBuilder"…Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder, string)*=;"9
+7Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplication*
+
+/Error¥
+¢
+ (6
+%70Microsoft.AspNetCore.Builder.IApplicationBuilder"lMicrosoft.AspNetCore.Builder.HstsBuilderExtensions.UseHsts(Microsoft.AspNetCore.Builder.IApplicationBuilder)*86"4
+2Microsoft.AspNetCore.Builder.HstsBuilderExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplication*
+2*¦
+2 (¿
+¼
+ (%6
+%80Microsoft.AspNetCore.Builder.IApplicationBuilder"Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection(Microsoft.AspNetCore.Builder.IApplicationBuilder)*?=";
+9Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplicationª
+§
+ ( 6
+%90Microsoft.AspNetCore.Builder.IApplicationBuilder"rMicrosoft.AspNetCore.Builder.StaticFileExtensions.UseStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)*75"3
+1Microsoft.AspNetCore.Builder.StaticFileExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplicationÖ
+Ó
+ (7
+%100Microsoft.AspNetCore.Builder.IApplicationBuilder"…Microsoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions.UseRouting(Microsoft.AspNetCore.Builder.IApplicationBuilder)*NL"J
+HMicrosoft.AspNetCore.Builder.EndpointRoutingApplicationBuilderExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplicationÈ
+Å
+ ("7
+%110Microsoft.AspNetCore.Builder.IApplicationBuilder"Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions.UseAuthorization(Microsoft.AspNetCore.Builder.IApplicationBuilder)*DB"@
+>Microsoft.AspNetCore.Builder.AuthorizationAppBuilderExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplicationå
+â
+ (G
+%12@Microsoft.AspNetCore.Builder.PageActionEndpointConventionBuilder"‡Microsoft.AspNetCore.Builder.RazorPagesEndpointRouteBuilderExtensions.MapRazorPages(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)*KI"G
+EMicrosoft.AspNetCore.Builder.RazorPagesEndpointRouteBuilderExtensions*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplication–
+“
+ (
+%13void"8Microsoft.AspNetCore.Builder.WebApplication.Run(string?)*64
+2
+app+Microsoft.AspNetCore.Builder.WebApplication*
+""*
+3*.
+3	 (	"
+ (	
+implicit return:
+  (-
+argsstring[]B!"
+ArlingtonThisWeek.Web.Program

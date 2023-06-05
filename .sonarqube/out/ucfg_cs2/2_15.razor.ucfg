@@ -1,0 +1,189 @@
+
+!arlingtonthisweek.web/pages/index"0*Ç3
+0à
+~Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Index_cshtml.g.cs: I(E¶
+£
+t
+jC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Pages\Index.cshtml ($F
+%0@Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TModel>"4ArlingtonThisWeek.Web.Pages.Pages_Index.ViewData.get*-+)
+'ArlingtonThisWeek.Web.Pages.Pages_Index≠
+™
+t
+jC:\code\devops\working_with_jenkins\dotnet_code\ArlingtonThisWeek\ArlingtonThisWeek.Web\Pages\Index.cshtml ($
+%1object":System.Collections.Generic.ICollection<T>.this[string].set*JH
+F
+%0@Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TModel>*	
+Title*
+	Home page¬
+øI
+%2CMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager"CArlingtonThisWeek.Web.Pages.Pages_Index.__tagHelperScopeManager.get*-+)
+'ArlingtonThisWeek.Web.Pages.Pages_Index
+
+%3"__id*
+""í
+è
+
+%4void"'arlingtonthisweek.web/pages/index!img63*
+
+%5*
+
+Modelobject*
+
+ViewBagDataAllobject*
+
+ViewBagDataHtmlobject*
+
+TempDataAllobject*
+
+TempDataHtmlobject*!
+
+HttpContextItemsAllobject*" 
+
+HttpContextItemsHtmlobjectØ
+¨ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*
+
+
+%4voidÀ
+»F
+%6@Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper"JMicrosoft.AspNetCore.Mvc.Razor.RazorPageBase.CreateTagHelper<TTagHelper>()*20.
+,Microsoft.AspNetCore.Mvc.Razor.RazorPageBaseå
+â¥)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"Ü
+B__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper@Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper"__id*JH
+F
+%6@Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelperÙ
+ÒM
+%7GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContexté
+ãF
+%8@Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper"__id*∫∑*¥)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"Ü
+B__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper@Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper≠
+™
+
+%9void"}Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.Add(Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper)*QO
+M
+%7GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext*JH
+F
+%8@Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelperı
+ÚN
+%10GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext—
+Œ?
+%118Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute"__id*ÑÅ*)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"R
+__tagHelperAttribute_08Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeæ
+ª
+%12void"íMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.AddHtmlAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute)*RP
+N
+%10GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext*CA
+?
+%118Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeı
+ÚN
+%13GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext—
+Œ?
+%148Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute"__id*ÑÅ*)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"R
+__tagHelperAttribute_18Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeæ
+ª
+%15void"íMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.AddHtmlAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute)*RP
+N
+%13GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext*CA
+?
+%148Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeı
+ÚN
+%16GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext—
+Œ?
+%178Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute"__id*ÑÅ*)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"R
+__tagHelperAttribute_28Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeæ
+ª
+%18void"íMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.AddHtmlAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute)*RP
+N
+%16GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext*CA
+?
+%178Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute÷
+”D
+%19=Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner"__id*ÑÅ*)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"R
+__tagHelperRunner=Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunnerı
+ÚN
+%20GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext◊
+‘"
+%21System.Threading.Tasks.Task"èMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext)*HF
+D
+%19=Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner*RP
+N
+%20GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContextı
+ÚN
+%22GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContextÈ
+Ê<
+%235Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput"RMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.Output.get*RP
+N
+%22GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContextü
+ú
+%24bool"KMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput.IsContentModified.get*@>
+<
+%235Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput*
+1
+2*Í
+1à
+~Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Index_cshtml.g.csK K(Iı
+ÚN
+%25GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext‹
+Ÿ"
+%26System.Threading.Tasks.Task"_Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()*RP
+N
+%25GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext*
+2*Ñ
+2à
+~Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Index_cshtml.g.csM X(ı
+ÚN
+%27GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*ôñ*ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContextÈ
+Ê<
+%285Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput"RMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.Output.get*RP
+N
+%27GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext^
+\
+%29void"!razor_sink*@>
+<
+%285Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput√
+¿J
+%30CMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager"CArlingtonThisWeek.Web.Pages.Pages_Index.__tagHelperScopeManager.get*-+)
+'ArlingtonThisWeek.Web.Pages.Pages_IndexÓ
+ÎN
+%31GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"IMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager.End()*NL
+J
+%30CMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManagerÛ
+ì)
+'ArlingtonThisWeek.Web.Pages.Pages_Index"f
+__tagHelperExecutionContextGMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext"__id*RP
+N
+%31GMicrosoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext*
+3*•
+3à
+~Microsoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Pages_Index_cshtml.g.csY	 Y(	"
+implicit return:
+Modelobject:
+ViewBagDataAllobject:
+ViewBagDataHtmlobject:
+TempDataAllobject:
+TempDataHtmlobject:
+HttpContextItemsAllobject: 
+HttpContextItemsHtmlobjectB 
