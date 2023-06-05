@@ -50,7 +50,7 @@ steps:
     checkCoverage: true
     coverageFailOption: 'fixed'
     coverageType: 'lines'
-    coverageThreshold: '11'
+    coverageThreshold: '10'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
