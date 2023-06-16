@@ -51,8 +51,20 @@ steps:
     coverageFailOption: 'fixed'
     coverageType: 'lines'
     coverageThreshold: '10'
+- task: DotNetCoreCLI@2
+  displayName: 'Publish the deployment artifact'
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)'
     ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'zipfile'
     publishLocation: 'Container'
