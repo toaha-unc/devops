@@ -8,6 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["ArlingtonThisWeek.Web/ArlingtonThisWeek.Web.csproj", "ArlingtonThisWeek.Web/"]
+COPY ["ArlingtonThisWeek.Weather/ArlingtonThisWeek.Weather.csproj", "ArlingtonThisWeek.Weather/"]
 RUN dotnet restore "ArlingtonThisWeek.Web/ArlingtonThisWeek.Web.csproj"
 COPY . .
 WORKDIR "/src/ArlingtonThisWeek.Web"
